@@ -4,31 +4,17 @@ using UnityEngine;
 
 public class LaunchPadController : MonoBehaviour
 {
-    
-    [SerializeField] private Animator myLanchPad = null;
 
-    public Animation animation; 
-    /*
-    public KeyCode jumpKey = KeyCode.Space;
+    [SerializeField] private Animator animator;
 
-    public bool readyToLaunch;
+    [SerializeField] private string animationName = "Launch";
 
-    private void Update()
-    {
-        readyToLaunch = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsLaunch);
-    }
- 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (PlayerMovement.Launch)
-        {
-            myLanchPad.
+
+    private void OnTriggerEnter(Collider other) {
+        Debug.Log("Is tigering!");
+        if (other.CompareTag("Player")) {
+            animator.Play(animationName, 0, 0f);
         }
-
     }
 
-     if (collision.gameObject.CompareTag("LaunchPad"))
-        {
-            Launch();
-}
 }    
