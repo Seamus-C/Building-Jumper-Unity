@@ -78,6 +78,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("LaunchPad"))
         {
+            // New code by Seamus need to be implemted to main branch
+            LaunchPadController launchPad = collision.gameObject.GetComponent<LaunchPadController>();
+
+            if (launchPad != null) {
+                // Set launch multiplier to curent launch pad
+                launchForce = launchPad.launchMultiplier;
+            }
+            // end new code
+
             Launch();
         }
     }

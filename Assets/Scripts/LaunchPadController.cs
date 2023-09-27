@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LaunchPadController : MonoBehaviour
 {
+    public float launchMultiplier = 1f;
 
     [SerializeField] private Animator animator;
 
@@ -17,14 +18,5 @@ public class LaunchPadController : MonoBehaviour
             animator.Play(animationName, 0, 0f);
         }
     }
-}
 
-   /*private void OnTriggerEnter(Collider other) {
-        Debug.Log("Is tigering!");
-        if (other.CompareTag("Player")) {
-            animator.Play(animationName, 0, 0f);
-        }
-    }
-   
 }
-*/
