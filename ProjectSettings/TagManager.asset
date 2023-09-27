@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - LaunchPad
+  - Death
+  - Platform
   layers:
   - Default
   - TransparentFX
