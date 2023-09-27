@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
                 // Set launch multiplier to curent launch pad
                 launchForce = launchPad.launchMultiplier;
             }
-            // end new code
+            // End of new code
 
             Launch();
         }

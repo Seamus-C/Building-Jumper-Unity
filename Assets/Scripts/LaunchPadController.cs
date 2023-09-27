@@ -16,6 +16,7 @@ public class LaunchPadController : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             animator.Play(animationName, 0, 0f);
+            Debug.Log("worky");
         }
     }
 
