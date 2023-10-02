@@ -221,6 +221,7 @@ MonoBehaviour:
   boostForce: 0
   jumpCooldown: 0.25
   airMultiplier: 0.4
+  scorekeeper: {fileID: 0}
   jumpKey: 32
   playerHeight: 2
   whatIsGround:
@@ -242,6 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreAdded: 1
   scoreboardText: {fileID: 0}
+  score: 0
 --- !u!1 &8379474607986455776
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,8 +383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a78a00c0a312b41a86c7ae30c280d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensX: 2000
-  sensY: 2000
+  sensX: 100
+  sensY: 100
   orientation: {fileID: 8538386863197034399}
 --- !u!114 &7738141292663375902
 MonoBehaviour:
